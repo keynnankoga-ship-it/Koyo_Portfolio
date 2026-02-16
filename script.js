@@ -1,17 +1,16 @@
-/* ================= CINEMATIC INTRO ================= */
+/* INTRO SCREEN */
 window.addEventListener("load", () => {
   const intro = document.getElementById("intro");
   if (intro) {
     setTimeout(() => {
       intro.style.display = "none";
-    }, 2500);
+    }, 2200);
   }
 });
 
 
-/* ================= DARK MODE ================= */
+/* DARK MODE */
 const toggle = document.querySelector(".toggle");
-
 if (toggle) {
   toggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
@@ -19,18 +18,7 @@ if (toggle) {
 }
 
 
-/* ================= CUSTOM CURSOR ================= */
-const cursor = document.querySelector(".cursor");
-
-if (cursor) {
-  document.addEventListener("mousemove", e => {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
-  });
-}
-
-
-/* ================= SCROLL REVEAL ================= */
+/* SCROLL REVEAL */
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -44,7 +32,7 @@ document.querySelectorAll(".work-item").forEach(el => {
 });
 
 
-/* ================= FILTER ================= */
+/* FILTER */
 const buttons = document.querySelectorAll(".filters button");
 const items = document.querySelectorAll(".work-item");
 
@@ -70,7 +58,7 @@ if (buttons.length > 0) {
 }
 
 
-/* ================= SEARCH ================= */
+/* SEARCH */
 const searchInput = document.getElementById("searchInput");
 
 if (searchInput) {
@@ -88,7 +76,7 @@ if (searchInput) {
 }
 
 
-/* ================= PAGE FADE TRANSITION ================= */
+/* PAGE FADE TRANSITION */
 document.querySelectorAll("a").forEach(link => {
   if (link.hostname === window.location.hostname) {
     link.addEventListener("click", function (e) {
