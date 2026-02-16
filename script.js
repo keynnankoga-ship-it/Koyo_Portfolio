@@ -1,16 +1,37 @@
-// Fade-in animation on load
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".fade-in").forEach(el => {
-    el.style.opacity = 1;
-  });
+/* LOADING SCREEN */
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  if(loader){
+    loader.style.opacity = "0";
+    setTimeout(() => loader.style.display = "none", 600);
+  }
 });
 
-// Filter
+/* DARK MODE */
+const toggle = document.querySelector(".toggle");
+if(toggle){
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+}
+
+/* SCROLL REVEAL */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll(".work-item").forEach(el => {
+  observer.observe(el);
+});
+
+/* FILTER */
 const buttons = document.querySelectorAll(".filters button");
 const items = document.querySelectorAll(".work-item");
-const searchInput = document.getElementById("searchInput");
 
-if(buttons){
 buttons.forEach(button => {
   button.addEventListener("click", () => {
     buttons.forEach(btn => btn.classList.remove("active"));
@@ -25,8 +46,9 @@ buttons.forEach(button => {
     });
   });
 });
-}
 
+/* SEARCH */
+const searchInput = document.getElementById("searchInput");
 if(searchInput){
 searchInput.addEventListener("keyup", () => {
   const value = searchInput.value.toLowerCase();
