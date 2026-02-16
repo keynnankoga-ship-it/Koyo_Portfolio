@@ -9,6 +9,48 @@ body {
   background: #e9e6e2;
   font-family: 'Playfair Display', serif;
   color: #111;
+  scroll-behavior: smooth; /* smooth scroll for navbar links */
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05); /* semi-transparent */
+  backdrop-filter: blur(10px); /* subtle glass effect */
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  opacity: 0.6;
+}
+
+/* Push content down so navbar doesn't overlap */
+body {
+  padding-top: 100px;
 }
 
 /* HERO SECTION */
@@ -113,6 +155,59 @@ body {
 
 .work-item p {
   font-size: 1rem;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 100px 6%;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.contact-section .contact-info {
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.contact-section form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-section button {
+  padding: 15px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-section button:hover {
+  opacity: 0.8;
 }
 
 /* FOOTER */
