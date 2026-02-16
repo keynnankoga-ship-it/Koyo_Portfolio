@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Koyo Koga | Home</title>
+<title>Koyo Koga | Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<!-- Elegant Serif Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<!-- Cinematic Intro -->
-<div id="intro">
-  <h1 class="intro-text">KOYO KOGA</h1>
-</div>
+<!-- HERO -->
+<section class="hero">
 
-<nav class="navbar">
-  <div class="nav-container">
-
-    <div class="logo">KOYO KOGA</div>
-
-    <ul class="nav-menu">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="portfolio.html">Works</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-
-    <div class="toggle">🌓</div>
-
+  <div class="hero-left">
+    <img src="icons/prof.jpeg" alt="Hero Image 1">
+    <img src="icons/prof.jpeg" alt="Hero Image 2" class="second-img">
   </div>
-</nav>
 
-<section class="section hero">
+  <div class="hero-right">
+    <h1>CREATIVE<br>PORTFOLIO</h1>
 
-  <div class="bg-text">HOME</div>
-
-  <div class="hero-inner">
-    <img src="icons/prof.jpeg" alt="Koyo Koga" class="profile-img">
-
-    <div>
-      <h1>Koyo Koga</h1>
-      <p class="tagline">Literature • Technology</p>
-      <p>Turning coffee, code, and commas into compelling creations.</p>
-      <a href="portfolio.html" class="btn">Explore My Work</a>
+    <div class="hero-info">
+      <p>Koyo Koga<br>Creative Developer</p>
+      <a href="#contact" class="work-btn">WORK WITH ME</a>
     </div>
   </div>
 
 </section>
 
-<footer>
+
+<!-- ABOUT -->
+<section class="about">
+
+  <div class="about-left">
+    <img src="icons/prof.jpeg" alt="About Image">
+  </div>
+
+  <div class="about-right">
+    <h2>ABOUT ME</h2>
+    <p>
+      I blend literature and technology to craft immersive digital experiences.
+      My work explores structure, minimalism, and thoughtful composition —
+      where code meets creative direction.
+    </p>
+  </div>
+
+</section>
+
+
+<!-- WORK -->
+<section class="work">
+
+  <h2>PREVIOUS<br>WORK</h2>
+
+  <div class="work-grid">
+
+    <div class="work-item">
+      <img src="icons/prof.jpeg" alt="">
+      <p>2024 — Digital Architecture Project</p>
+    </div>
+
+    <div class="work-item">
+      <img src="icons/prof.jpeg" alt="">
+      <p>2025 — Minimal Interface Study</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contact">
   <p>© 2026 Koyo Koga</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
