@@ -14,9 +14,76 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 </head>
+ 
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+  <div class="logo">Koyo Koga</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+  <div class="hero-left">
+    <img src="icons/hero4.jpeg" alt="Hero Image 1">
+    <img src="icons/hero2.jpeg" alt="Hero Image 2" class="second-img">
+  </div>
+
+  <div class="hero-right">
+    <h1>KOYO KOGA'S<br>PORTFOLIO</h1>
+
+    <div class="hero-info">
+      <p>
+        Writer<br>
+        International Relations Consultant<br>
+        Trainee Data Scientist<br>
+        Mediator<br>
+        ICT Professional
+      </p>
+      <a href="#contact" class="work-btn">WORK WITH ME</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+
+  <div class="about-left">
+    <img src="icons/about.jpeg" alt="About Image">
+  </div>
+
+  <div class="about-right">
+    <h2>ABOUT ME</h2>
+    <p>
+        I'm a writer, a programmer, and a curious mind constantly decoding the world. At the intersection of technology, diplomacy, and storytelling, I build ideas that speak and systems that work. I explore politics, geopolitics, and Pan-Africanism with equal parts insight and wit. My writing blends humor with reality, because sometimes truth lands better with a smile. I dissect global affairs not just to inform, but to provoke meaningful thought. <br> <br> As an International Relations consultant, I analyze global trends, policy shifts, and diplomatic dynamics. I approach global issues with balance, research, and a strategic lens. Dialogue matters to me, which is why I also serve as a mediator. I believe conflict resolution begins with listening before responding. Whether in policy discussions or personal disputes, I value clarity, fairness, and constructive engagement. <br> <br> Alongside diplomacy and writing, I'm an IT professional specializing in programming and web development. I design and build responsive websites and professional portfolios that merge aesthetics with performance. Coding, to me, is structured storytelling, logic wrapped in creativity. Each function solves a problem; each interface tells a story. I enjoy transforming complex ideas into clean, interactive digital experiences. As a data scientist, I work where numbers meet narrative. I analyze data not just for patterns, but for meaning. Data, like writing, tells a story, you just have to ask the right questions. From datasets to dashboards, I turn information into insight.<br> <br> My blogs span politics, education, society, and culture. I write to educate, challenge, and sometimes gently disturb complacency. Humor remains my secret weapon, especially when confronting serious realities. I believe technology and literature are collaborators, not competitors. One builds the platform; the other fills it with purpose. I'm fascinated by how digital systems influence global conversations. Every website I build reflects precision, usability, and creative intention. Every article I write reflects research, reflection, and personality. I thrive in spaces that demand both analytical rigor and imaginative depth.
+Innovation drives me, curiosity sustains me and Impact motivates me. <br> <br> I enjoy solving problems, whether debugging code, interpreting data, or mediating dialogue. My professional journey is defined by adaptability and interdisciplinary thinking. I move comfortably between policy discussions, programming environments, and creative drafts. I see the world as interconnected be it politically, technologically,or socially. That interconnectedness shapes both my writing and my technical work. I strive to bridge gaps: between ideas and implementation, between disagreement and understanding.
+This portfolio reflects more than skills, it reflects a philosophy. A philosophy that intellect and imagination can coexist. That diplomacy and data can inform each other. That humor and seriousness are not opposites. And that storytelling, whether through words, code, or analytics, remains one of the most powerful tools we have.
+
+I'm a storyteller in every sense across platforms, across disciplines, across conversations.<br> <br> Welcome to my world, where policy meets programming, data meets dialogue, and ideas become action
+    </p>
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="work">
+
+  <h2>MY<br>PROJECTS</h2>
+
+  <div class="work-grid">
 
   <section id="substack-section">
-  <h1>Latest From Substack</h1>
+  <h1>My Writings On Substack</h1>
   <div id="substack-posts" class="posts-grid"></div>
 </section>
 
@@ -104,91 +171,7 @@ async function loadSubstack() {
 loadSubstack();
 </script>
 
-<body>
-
-<!-- NAVIGATION -->
-<header class="navbar">
-  <div class="logo">Koyo Koga</div>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<!-- HERO -->
-<section id="home" class="hero">
-
-  <div class="hero-left">
-    <img src="icons/hero4.jpeg" alt="Hero Image 1">
-    <img src="icons/hero2.jpeg" alt="Hero Image 2" class="second-img">
-  </div>
-
-  <div class="hero-right">
-    <h1>KOYO KOGA'S<br>PORTFOLIO</h1>
-
-    <div class="hero-info">
-      <p>
-        Writer<br>
-        International Relations Consultant<br>
-        Trainee Data Scientist<br>
-        Mediator<br>
-        ICT Professional
-      </p>
-      <a href="#contact" class="work-btn">WORK WITH ME</a>
-    </div>
-  </div>
-
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="about">
-
-  <div class="about-left">
-    <img src="icons/about.jpeg" alt="About Image">
-  </div>
-
-  <div class="about-right">
-    <h2>ABOUT ME</h2>
-    <p>
-        I'm a writer, a programmer, and a curious mind constantly decoding the world. At the intersection of technology, diplomacy, and storytelling, I build ideas that speak and systems that work. I explore politics, geopolitics, and Pan-Africanism with equal parts insight and wit. My writing blends humor with reality, because sometimes truth lands better with a smile. I dissect global affairs not just to inform, but to provoke meaningful thought. <br> <br> As an International Relations consultant, I analyze global trends, policy shifts, and diplomatic dynamics. I approach global issues with balance, research, and a strategic lens. Dialogue matters to me, which is why I also serve as a mediator. I believe conflict resolution begins with listening before responding. Whether in policy discussions or personal disputes, I value clarity, fairness, and constructive engagement. <br> <br> Alongside diplomacy and writing, I'm an IT professional specializing in programming and web development. I design and build responsive websites and professional portfolios that merge aesthetics with performance. Coding, to me, is structured storytelling, logic wrapped in creativity. Each function solves a problem; each interface tells a story. I enjoy transforming complex ideas into clean, interactive digital experiences. As a data scientist, I work where numbers meet narrative. I analyze data not just for patterns, but for meaning. Data, like writing, tells a story, you just have to ask the right questions. From datasets to dashboards, I turn information into insight.<br> <br> My blogs span politics, education, society, and culture. I write to educate, challenge, and sometimes gently disturb complacency. Humor remains my secret weapon, especially when confronting serious realities. I believe technology and literature are collaborators, not competitors. One builds the platform; the other fills it with purpose. I'm fascinated by how digital systems influence global conversations. Every website I build reflects precision, usability, and creative intention. Every article I write reflects research, reflection, and personality. I thrive in spaces that demand both analytical rigor and imaginative depth.
-Innovation drives me, curiosity sustains me and Impact motivates me. <br> <br> I enjoy solving problems, whether debugging code, interpreting data, or mediating dialogue. My professional journey is defined by adaptability and interdisciplinary thinking. I move comfortably between policy discussions, programming environments, and creative drafts. I see the world as interconnected be it politically, technologically,or socially. That interconnectedness shapes both my writing and my technical work. I strive to bridge gaps: between ideas and implementation, between disagreement and understanding.
-This portfolio reflects more than skills, it reflects a philosophy. A philosophy that intellect and imagination can coexist. That diplomacy and data can inform each other. That humor and seriousness are not opposites. And that storytelling, whether through words, code, or analytics, remains one of the most powerful tools we have.
-
-I'm a storyteller in every sense across platforms, across disciplines, across conversations.<br> <br> Welcome to my world, where policy meets programming, data meets dialogue, and ideas become action
-    </p>
-  </div>
-
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="work">
-
-  <h2>PREVIOUS<br>WORK</h2>
-
-  <div class="work-grid">
-
-   <!-- ================= WORK ITEMS (ALL 25 INCLUDED) ================= -->
-
-<!-- Work 1 -->
-<div class="work-item political">
-<img src="icons/icon1.jpg" alt="">
-<h3>The Republic of Lies, Ltd: Kenya and the Professionalisation of Presidential Dishonesty</h3>
-<p class="work-category">Political</p>
-<a href="https://open.substack.com/pub/koyokk/p/the-republic-of-lies-ltd-kenya-and?r=313e1w&utm_campaign=post&utm_medium=web" target="_blank">Read More →</a>
-</div>
-
-<!-- Work 2 -->
-<div class="work-item memorium">
-<img src="icons/icon2.webp" alt="">
-<h3>Love Letter for the Martyred: A Valentine for the Fallen</h3>
-<p class="work-category">Political, Memorium</p>
-<a href="https://open.substack.com/pub/koyokk/p/love-letter-for-the-martyred-a-valentine?r=313e1w&utm_campaign=post&utm_medium=web" target="_blank">Read More →</a>
-</div>
-
+MY PUBLISHED WRITINGS BY AFRICAN COALITION FOR DEVELOPMENT
 <!-- Work 3 -->
 <div class="work-item political">
 <img src="icons/icon3.jpeg" alt="">
@@ -197,40 +180,12 @@ I'm a storyteller in every sense across platforms, across disciplines, across co
 <a href="https://www.africandev.org/post/the-gen-z-effect-transforming-political-awareness-in-the-21st-century" target="_blank">Read More →</a>
 </div>
 
-<!-- Work 4 -->
-<div class="work-item social">
-<img src="icons/icon4.webp" alt="">
-<h3>Say It Slowly. My Ancestors Are Listening.</h3>
-<p class="work-category">Social, Culture, Pan-Africanism</p>
-<a href="https://koyokk.substack.com/p/say-it-slowly-my-ancestors-are-listening?r=313e1w" target="_blank">Read More →</a>
-</div>
-
 <!-- Work 5 -->
 <div class="work-item political">
 <img src="icons/icon5.webp" alt="">
 <h3>Africa's Leap Forward: The Singapore Dream as a Development Paradigm</h3>
 <p class="work-category">Political, Economic</p>
 <a href="https://www.africandev.org/post/africa-s-leap-forward-the-singapore-dream-as-a-development-paradigm" target="_blank">Read More →</a>
-</div>
-
-  <!-- Work Item 6 -->
-<div class="work-item philosophical">
-    <div class="work-icon">
-        <img src="icons/icon1.jpg" alt="Philosophical Icon">
-    </div>
-    <h3>Are We What We Do with Time, or What Time Does with Us?</h3>
-    <p class="work-category">Category: Philosophical</p>
-    <a href="https://koyokk.substack.com/p/are-we-what-we-do-with-time-or-what?r=313e1w" class="read-more">Read More →</a>
-</div>
-
-<!-- Work Item 7 -->
-<div class="work-item geopolitical">
-    <div class="work-icon">
-        <img src="icons/icon7.webp" alt="Geo-Political Icon">
-    </div>
-    <h3>To Obey International Law is Virtuous; To Expect it Universally is Naive</h3>
-    <p class="work-category">Category: Geo-Political, Law</p>
-    <a href="https://koyokk.substack.com/p/to-obey-international-law-is-virtuous?r=313e1w" class="read-more">Read More →</a>
 </div>
 
 <!-- Work Item 8 -->
