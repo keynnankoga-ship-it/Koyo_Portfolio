@@ -321,3 +321,39 @@ footer {
     grid-column: span 1;
   }
 }
+/* ============================= */
+/* IMAGE SIZE FIX */
+/* ============================= */
+
+/* HERO IMAGES */
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-left img {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ABOUT IMAGE */
+.about-left img {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-left img,
+  .about-left img {
+    width: 180px;
+  }
+}
+
