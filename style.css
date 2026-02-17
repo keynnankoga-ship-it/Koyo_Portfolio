@@ -181,6 +181,9 @@ body {
   border: 1px solid rgba(255,255,255,0.15);
   box-shadow: 0 25px 50px rgba(0,0,0,0.2);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-section h2 {
@@ -200,20 +203,21 @@ body {
   line-height: 1.8;
 }
 
+/* TRUE CENTERED CONTACT FORM */
 form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
+  width: 100%;
   max-width: 500px;
   margin: 0 auto;
 }
 
-.full-width {
-  grid-column: span 2;
-}
-
-input, textarea {
+input,
+textarea {
   width: 100%;
+  max-width: 500px;
   padding: 14px;
   border-radius: 10px;
   border: 1px solid rgba(0,0,0,0.2);
@@ -234,7 +238,8 @@ textarea {
 }
 
 button {
-  grid-column: span 2;
+  width: 60%;
+  max-width: 250px;
   padding: 16px;
   border: none;
   border-radius: 12px;
@@ -314,13 +319,14 @@ footer {
 }
 
 @media (max-width: 768px) {
-  form {
-    grid-template-columns: 1fr;
-  }
-  .full-width, button {
-    grid-column: span 1;
+  /* Forms already stack vertically */
+  input,
+  textarea,
+  button {
+    max-width: 100%;
   }
 }
+
 /* ============================= */
 /* IMAGE SIZE FIX */
 /* ============================= */
@@ -359,113 +365,84 @@ footer {
 
 @media (max-width: 768px) {
   .hero {
-    flex-direction: row;      /* keep side by side */
+    flex-direction: row;      
     align-items: center;
     gap: 20px;
   }
 
   .hero-left img {
-    width: 120px;             /* smaller for phone */
+    width: 120px;             
   }
 
   .hero-right h1 {
-    font-size: 20px;          /* shrink text */
+    font-size: 20px;          
   }
 }
 
 /* HERO MOBILE FIX */
 @media (max-width: 768px) {
   .hero {
-    flex-direction: row; /* keep images and text side-by-side */
+    flex-direction: row; 
     align-items: center;
     gap: 15px;
   }
 
   .hero-left img {
-    width: 120px; /* smaller so it fits */
+    width: 120px; 
   }
 
   .hero-right h1 {
-    font-size: 1.6rem; /* smaller text */
+    font-size: 1.6rem; 
   }
 }
 
-/* HERO MOBILE FIX */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: row; /* keep images next to text */
-    align-items: center;
-    gap: 15px;
-  }
-
-  .hero-left img {
-    width: 120px; /* smaller for phone */
-  }
-
-  .hero-right h1 {
-    font-size: 1.6rem; /* shrink text for smaller screen */
-  }
-}
-
-/* ============================= */
 /* HERO & IMAGE RESPONSIVE FIXES */
-/* ============================= */
-
-/* HERO SECTION - IMAGES */
 .hero-left {
   display: flex;
-  flex-direction: column;  /* stacked by default for desktop flexibility */
+  flex-direction: column;  
   gap: 20px;
 }
 
 .hero-left img {
-  width: 220px;            /* smaller desktop size */
+  width: 220px;            
   max-width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
 
-/* ABOUT SECTION IMAGE */
 .about-left img {
-  width: 280px;            /* smaller, more balanced */
+  width: 280px;            
   max-width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
 
-/* HERO TEXT */
 .hero-right h1 {
   font-size: 2.4rem;
   line-height: 1.2;
 }
 
-/* BUTTON / HERO INFO */
 .hero-info p {
   font-size: 1rem;
   line-height: 1.5;
 }
 
-/* ============================= */
 /* MOBILE RESPONSIVE ADJUSTMENTS */
-/* ============================= */
 @media (max-width: 768px) {
-  /* HERO SECTION SIDE-BY-SIDE */
   .hero {
-    flex-direction: row;     /* images beside text */
+    flex-direction: row;     
     align-items: center;
     gap: 15px;
-    flex-wrap: wrap;         /* allow wrapping if screen is very narrow */
+    flex-wrap: wrap;         
     padding: 40px 20px;
   }
 
-  /* Reduce hero images */
   .hero-left img {
     width: 120px;
   }
 
-  /* Shrink hero text */
   .hero-right h1 {
     font-size: 1.6rem;
     text-align: left;
@@ -475,12 +452,10 @@ footer {
     font-size: 0.9rem;
   }
 
-  /* ABOUT IMAGE REDUCTION */
   .about-left img {
     width: 180px;
   }
 
-  /* About section stacking */
   .about {
     flex-direction: column;
     text-align: center;
@@ -488,13 +463,3 @@ footer {
     padding: 40px 20px;
   }
 }
-
-/* FORCE CONTACT SECTION CENTERING */
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
