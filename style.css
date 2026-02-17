@@ -357,3 +357,19 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: row;      /* keep side by side */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hero-left img {
+    width: 120px;             /* smaller for phone */
+  }
+
+  .hero-right h1 {
+    font-size: 20px;          /* shrink text */
+  }
+}
+
