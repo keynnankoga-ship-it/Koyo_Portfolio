@@ -390,3 +390,103 @@ footer {
   }
 }
 
+/* HERO MOBILE FIX */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: row; /* keep images next to text */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero-left img {
+    width: 120px; /* smaller for phone */
+  }
+
+  .hero-right h1 {
+    font-size: 1.6rem; /* shrink text for smaller screen */
+  }
+}
+
+/* ============================= */
+/* HERO & IMAGE RESPONSIVE FIXES */
+/* ============================= */
+
+/* HERO SECTION - IMAGES */
+.hero-left {
+  display: flex;
+  flex-direction: column;  /* stacked by default for desktop flexibility */
+  gap: 20px;
+}
+
+.hero-left img {
+  width: 220px;            /* smaller desktop size */
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ABOUT SECTION IMAGE */
+.about-left img {
+  width: 280px;            /* smaller, more balanced */
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* HERO TEXT */
+.hero-right h1 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+/* BUTTON / HERO INFO */
+.hero-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ============================= */
+/* MOBILE RESPONSIVE ADJUSTMENTS */
+/* ============================= */
+@media (max-width: 768px) {
+  /* HERO SECTION SIDE-BY-SIDE */
+  .hero {
+    flex-direction: row;     /* images beside text */
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;         /* allow wrapping if screen is very narrow */
+    padding: 40px 20px;
+  }
+
+  /* Reduce hero images */
+  .hero-left img {
+    width: 120px;
+  }
+
+  /* Shrink hero text */
+  .hero-right h1 {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
+  .hero-info p {
+    font-size: 0.9rem;
+  }
+
+  /* ABOUT IMAGE REDUCTION */
+  .about-left img {
+    width: 180px;
+  }
+
+  /* About section stacking */
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+}
+
+
