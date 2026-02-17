@@ -489,4 +489,12 @@ footer {
   }
 }
 
+/* FORCE CONTACT SECTION CENTERING */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 
